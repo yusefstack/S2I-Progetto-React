@@ -6,7 +6,7 @@ exports.handler = async function(event, context) {
     
     const options = {
         method: "GET",
-        url: `https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.API_KEY}&query=${query}`,
+        url: `https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.API_KEY}&query=${query}&diet=vegetarian`,
         headers: {
         "Content-Type": "application/json",
         },
