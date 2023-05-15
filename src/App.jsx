@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import SharedLayout from './components/SharedLayout'
 import Home from './components/Home'
 import SingleRecipe from './components/SingleRecipe'
-import ResercheadRecipes from './components/resercheadRecipes'
+import ResercheadRecipes from './components/ResercheadRecipes'
 import SingleRecipeForSearch from './components/SingleRecipeForSearch'
 
 function App() {
