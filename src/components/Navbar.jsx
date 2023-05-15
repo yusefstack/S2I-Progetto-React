@@ -16,6 +16,7 @@ const Navbar = () => {
     const results = await axios.get(`/.netlify/functions/mealsInfo?query=${searchWord}`)
     dispatch(addResearchRecipes(results.data.results))
     navigate("/researchedRecipes")
+    setSearchWord('')
   }
     
   function handleChange(e) {
