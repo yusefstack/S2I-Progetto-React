@@ -25,7 +25,7 @@ const Home = () => {
         <img src={recipe.image} alt="recipe" className="rounded-xl" />
       </figure>
       <div className="card-body rounded-b-2xl items-center text-center">
-        <h2 className="card-title">{recipe.title}</h2>
+        <h2 className="card-title h-10 mb-3">{recipe.title}</h2>
         <div className="card-actions">
           <Link to={`recipes/${recipe.id}`} className="btn btn-success">Learn to make</Link>
         </div>
