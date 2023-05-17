@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../assets/img/VEG logo.png'
+import logo from '../assets/img/VEG-logo.png'
 
 const Appfooter = () => {
   return (
