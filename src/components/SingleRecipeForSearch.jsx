@@ -25,7 +25,7 @@ useEffect(() => {
 
 const ingridientsToDisplay = extendedIngredients.map((ingridient) => {
     return (
-        <li key={uuidv4()}>{ingridient.original}</li>
+        <li key={uuidv4()}><span className='mr-3 text-green-700'>➜</span>{ingridient.original}</li>
     )
 })
 
@@ -69,8 +69,8 @@ if (isLoaded === false) {
                 </div>
                 <h1 className='text-5xl font-bold mb-10 text-center'>{mealData.title}</h1>
                 <img alt="..." src={mealData.image} className="w-2/4 m-auto align-middle shadow-xl rounded-2xl max-md:w-5/6"/>
-                <div className="flex w-2/4 m-auto max-md:block">
-                    <div className="relative w-2/4 flex flex-col mt-4 max-md:w-full">
+                <div className="flex w-2/4 justify-between m-auto mt-10 max-md:block">
+                    <div className="relative w-1/3 flex flex-col mt-4 max-md:w-full">
                         <div className="px-4 py-5 flex">
                             <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
                                 <p className='bg-transparent text-3xl font-bold'>?</p>
