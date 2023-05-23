@@ -4,6 +4,7 @@ import Home from './components/Home'
 import SingleRecipe from './components/SingleRecipe'
 import ResercheadRecipes from './components/ResercheadRecipes'
 import SingleRecipeForSearch from './components/SingleRecipeForSearch'
+import Error from './components/Error'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
           <Route path="/researchedRecipes" element={<ResercheadRecipes/>}></Route>
           <Route path="recipes/:recipeId" element={<SingleRecipe />}></Route>
           <Route path="researchedRecipes/recipes/:recipeId" element={<SingleRecipeForSearch />}></Route>
+          <Route path="*" element={<Error />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>
