@@ -53,7 +53,7 @@ const Home = () => {
 if (isLoaded === false) {
   return (
     <div className='w-2/4 m-auto text-center my-96'>
-      <span className="w-64 loading loading-spinner text-secondary"></span>
+      <span className="w-64 loading loading-spinner text-secondary max-md:w-32"></span>
     </div>
   )
   } else {
