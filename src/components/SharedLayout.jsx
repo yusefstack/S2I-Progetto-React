@@ -6,9 +6,9 @@ import Appfooter from './Appfooter'
 const SharedLayout = () => {
     return (
         <>
-        <Navbar />
-        <Outlet />
-        <Appfooter />
+            <Navbar />
+            <Outlet />
+            <Appfooter />
         </>
     )
 }

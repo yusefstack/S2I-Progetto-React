@@ -1,12 +1,18 @@
 import React from 'react'
 import logo from '../assets/img/VEG-logo.png'
+import { Link } from 'react-router-dom'
 
 const Appfooter = () => {
   return (
     <>
-      <footer className="footer p-10 bg-base-200 text-base-content">
+      <footer className="footer relative p-10 bg-base-200 text-base-content">
         <div className='bg-transparent'>
-          <img src={logo} alt="footer-logo" className='bg-transparent w-20'/>
+          <Link 
+          to="/"
+          className='bg-transparent'
+          >
+            <img src={logo} alt="footer-logo" className='bg-transparent w-20'/>
+          </Link>
           <p className='bg-transparent'>VEG Ltd.<br/>Providing your favourite recipes since yesterday.</p>
         </div>
         <div className='bg-transparent'>

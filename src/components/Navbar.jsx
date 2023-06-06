@@ -29,13 +29,15 @@ const Navbar = () => {
   }
 
     return (
-        <div className="navbar bg-primary-focus">
-        <Link 
-          to="/" 
-          className="flex-1 bg-transparent"
-        >
-          <img className='w-16 h-16 bg-transparent max-md:w-12 max-md:h-12' src={logo} alt="nav-logo" />
-        </Link>
+        <div className="navbar bg-primary-focus flex justify-between">
+          <div className='bg-transparent lg:ml-10'>
+            <Link 
+              to="/" 
+              className="flex-1 bg-transparent"
+            >
+              <img className='w-16 h-16 bg-transparent max-md:w-12 max-md:h-12' src={logo} alt="nav-logo" />
+            </Link>
+          </div>
         <div className=" w-5/6 justify-between flex-none gap-2 bg-transparent">
           <form onSubmit={handleSubmit} className="form-control w-3/4 bg-transparent">
             <input 

@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import SharedLayout from './components/SharedLayout'
-import Home from './components/Home'
-import SingleRecipe from './components/SingleRecipe'
-import ResercheadRecipes from './components/ResercheadRecipes'
-import SingleRecipeForSearch from './components/SingleRecipeForSearch'
-import Error from './components/Error'
+import Home from './pages/views/features/Home'
+import SingleRecipe from './pages/views/features/SingleRecipe'
+import ResercheadRecipes from './pages/views/features/ResercheadRecipes'
+import SingleRecipeForSearch from './pages/views/features/SingleRecipeForSearch'
+import Error from './pages/views/features/Error'
 
 function App() {
 

@@ -37,10 +37,8 @@ const InstructionsToDisplay = analyzedInstructions.map((instruction) => {
 
 if (isLoaded === false) {
     return (
-        <div className='m-96 h-32'>
-            <div className="bg-transparent absolute right-1/2 bottom-1/2  transform translate-x-1/2 translate-y-1/2 ">
-                <div className="bg-transparent border-t-transparent border-solid animate-spin  rounded-full border-green-700 border-8 h-64 w-64"></div>
-            </div>
+        <div className='w-2/4 m-auto text-center my-96'>
+            <span className="w-64 loading loading-spinner text-secondary"></span>
         </div>
     )
     } else {
@@ -83,7 +81,7 @@ if (isLoaded === false) {
                     </div>
 
                     <div className="relative w-2/4 flex flex-col mt-4 max-md:w-full">
-                        <div className="px-4 py-5 bg-transparent flex">
+                        <div className="px-4 py-5 bg-transparent flex w-4/6 m-auto max-md:w-full">
                             <div className="text-blueGray-500 p-3 text-center bg-transparent inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
                                 <p className='bg-transparent text-3xl font-bold'>?</p>
                             </div>

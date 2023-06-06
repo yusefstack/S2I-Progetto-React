@@ -12,4 +12,7 @@ export default {
     require('flowbite/plugin'),
     require("daisyui"),
   ],
+  daisyui: {
+    themes: ["lemonade", "dark", "cupcake"],
+  },
 }
